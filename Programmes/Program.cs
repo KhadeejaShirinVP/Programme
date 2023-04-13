@@ -24,18 +24,18 @@ namespace Programmes
             //Console.WriteLine("\nSecond Largest is: " + nums[nums.Length-2]);
 
             //......................................................................................................................//
-            //smallest element in the array
-            int[] nums = { 7, 2, 68, 67, 21, 78, 90, 67, 54, 35, 23 };
-            int min = nums[0];
-            for(int i = 0; i < nums.Length; i++)
-            {
-                if (nums[i] < min)
-                {
-                    min = nums[i];
-                }
-            }
-            Console.WriteLine("Smallest element in the array is: "+min);
-            
+            ////smallest element in the array
+            //int[] nums = { 7, 2, 68, 67, 21, 78, 90, 67, 54, 35, 23 };
+            //int min = nums[0];
+            //for(int i = 0; i < nums.Length; i++)
+            //{
+            //    if (nums[i] < min)
+            //    {
+            //        min = nums[i];
+            //    }
+            //}
+            //Console.WriteLine("Smallest element in the array is: "+min);
+
             //..............................................................................................................//
 
             ////Reverse string
@@ -54,7 +54,7 @@ namespace Programmes
 
             //.................................................................................//
 
-            //pallindrom
+            //pallindrom WORD
             //string word = "", rev = "";
             //Console.WriteLine("enter a word: ");
             //word = Console.ReadLine();
@@ -76,6 +76,32 @@ namespace Programmes
 
             //}
             //Console.ReadKey();
+
+            //................................................................................................................//
+
+            ////Palindrom integer
+            //int number, reverseNumber = 0,reminder;
+            //Console.WriteLine("Enter a number: ");
+            //number = int.Parse(Console.ReadLine());
+            //int originalNumber=number;
+
+            //while(number!=0)
+            //{
+            //    reminder = number % 10;
+            //    reverseNumber= reverseNumber*10 + reminder;
+            //    number= number / 10;
+            //}
+            //if(originalNumber==reverseNumber)
+            //{
+            //    Console.WriteLine("number are palindrom");
+            //}
+            //else
+            //Console.WriteLine("number are not pallindrom");
+            //Console.ReadKey();
+
+
+            //.................................................................................................//
+
 
             //............................................................................................//
             //prime number
@@ -103,7 +129,36 @@ namespace Programmes
             //    Console.WriteLine("non prime");
             //Console.ReadKey();
 
-            //...................................................................//
+            //........................................................................................//
+
+            ////prime number between x to y
+            //int num, count, firstNumber, lastNumber;
+            //Console.Write("Input starting number of range: ");
+            //firstNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Input ending number of range : ");
+            //lastNumber = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("The prime numbers between {0} and {1} are : \n", firstNumber, lastNumber);
+
+            //for (num = firstNumber; num <= lastNumber; num++)
+            //{
+            //    count = 0;
+
+            //    for (int i = 2; i <= num / 2; i++)
+            //    {
+            //        if (num % i == 0)
+            //        {
+            //            count++;
+            //            break;
+            //        }
+            //    }
+
+            //    if (count == 0 && num != 1)
+            //        Console.Write("{0} ", num);
+            //}
+            //Console.ReadKey();
+
+            //...........................................................................................................//
+
 
             // even or odd
             //int n;
@@ -245,6 +300,43 @@ namespace Programmes
             //Console.WriteLine("The factorial of " + number + " is " + factorial);
 
 
+
+
+
+
+
+
+            //.........................................................................................................//
+
+            //swapping
+            int a=20,b=30,temp;
+            temp = a;
+            a = b;
+            b=temp;
+            Console.WriteLine("a: {0}, b: {1}" ,a,b);
+
+            //...........................................................................................................//
+
+            ////Sum of two numbers
+            //int x, y, sum;
+            //Console.WriteLine("enter 2 number: ");
+            //x = Convert.ToInt32(Console.ReadLine());
+            //y = Convert.ToInt32(Console.ReadLine());
+            //sum = x + y;
+            //Console.WriteLine(sum);
+
+            //...................................................................//
+
+            ////average of 3 numbers
+            //float x, y, z, average;
+            //Console.WriteLine("enter 3 number");
+            //x = float.Parse(Console.ReadLine());
+            //y = float.Parse(Console.ReadLine());
+            //z = float.Parse(Console.ReadLine());
+            //average = (x + y + z) / 2;
+            //Console.WriteLine(average);
+
+            //....................................................................................................................//
 
 
         }
